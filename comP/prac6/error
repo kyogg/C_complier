@@ -1,0 +1,2176 @@
+y.tab.c: In function ‘yyparse’:
+y.tab.c:1654:16: warning: implicit declaration of function ‘yylex’ [-Wimplicit-function-declaration]
+ 1654 |       yychar = yylex ();
+      |                ^~~~~
+koo.y:62:43: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+   62 |  {root=makeNode(N_PROGRAM,NIL,$1,NIL); checkForwardReference();}
+      |                                      ~~~~~^~~
+      |                                           |
+      |                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:66:80: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   66 |  | translation_unit external_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                                ^   
+      |                                                                                |
+      |                                                                                YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:66:90: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   66 |  | translation_unit external_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                                          ^  
+      |                                                                                          |
+      |                                                                                          YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:66:55: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   66 |  | translation_unit external_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                       ^
+koo.y:73:88: warning: passing argument 1 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   73 |  : declaration_specifiers declarator {$$=setFunctionDeclaratorSpecifier($2,$1);}
+      |                                                                                        ^  
+      |                                                                                        |
+      |                                                                                        YYSTYPE {aka long int}
+koo.y:40:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   40 |  A_ID*  setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:73:97: warning: passing argument 2 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   73 |  : declaration_specifiers declarator {$$=setFunctionDeclaratorSpecifier($2,$1);}
+      |                                                                                                 ^   
+      |                                                                                                 |
+      |                                                                                                 YYSTYPE {aka long int}
+koo.y:40:9: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   40 |  A_ID*  setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:73:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   73 |  : declaration_specifiers declarator {$$=setFunctionDeclaratorSpecifier($2,$1);}
+      |                                                   ^
+koo.y:74:66: warning: passing argument 1 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   74 |  compound_statement {$$=setFunctionDeclaratorBody($3,$4);}
+      |                                                                  ^   
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:41:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   41 |  A_ID*  setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:74:76: warning: passing argument 2 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   74 |  compound_statement {$$=setFunctionDeclaratorBody($3,$4);}
+      |                                                                            ^  
+      |                                                                            |
+      |                                                                            YYSTYPE {aka long int}
+koo.y:41:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   41 |  A_ID*  setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:74:34: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   74 |  compound_statement {$$=setFunctionDeclaratorBody($3,$4);}
+      |                                  ^
+koo.y:75:65: warning: passing argument 1 of ‘setFunctionDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   75 |  | declarator {$$=setFunctionDeclaratorSpecifier($1,makeSpecifier(int_type,0));}
+      |                                                            ~~~~~^~~
+      |                                                                 |
+      |                                                                 YYSTYPE {aka long int}
+koo.y:40:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   40 |  A_ID*  setFunctionDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:75:28: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   75 |  | declarator {$$=setFunctionDeclaratorSpecifier($1,makeSpecifier(int_type,0));}
+      |                            ^
+koo.y:76:66: warning: passing argument 1 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   76 |  compound_statement {$$=setFunctionDeclaratorBody($2,$3);}
+      |                                                                  ^   
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:41:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   41 |  A_ID*  setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:76:76: warning: passing argument 2 of ‘setFunctionDeclaratorBody’ makes pointer from integer without a cast [-Wint-conversion]
+   76 |  compound_statement {$$=setFunctionDeclaratorBody($2,$3);}
+      |                                                                            ^  
+      |                                                                            |
+      |                                                                            YYSTYPE {aka long int}
+koo.y:41:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   41 |  A_ID*  setFunctionDeclaratorBody(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:76:34: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   76 |  compound_statement {$$=setFunctionDeclaratorBody($2,$3);}
+      |                                  ^
+koo.y:84:71: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   84 |  | declaration_list declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                       ^   
+      |                                                                       |
+      |                                                                       YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:84:81: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+   84 |  | declaration_list declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                                 ^  
+      |                                                                                 |
+      |                                                                                 YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:84:46: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   84 |  | declaration_list declaration {$$=linkDeclaratorList($1,$2);}
+      |                                              ^
+koo.y:87:108: warning: passing argument 1 of ‘setDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   87 |  : declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2,$1);}
+      |                                                                                                            ^   
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+koo.y:39:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   39 |  A_ID*  setDeclaratorListSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:87:118: warning: passing argument 2 of ‘setDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   87 |  : declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2,$1);}
+      |                                                                                                                      ^   
+      |                                                                                                                      |
+      |                                                                                                                      YYSTYPE {aka long int}
+koo.y:39:9: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   39 |  A_ID*  setDeclaratorListSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:87:75: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+   87 |  : declaration_specifiers init_declarator_list_opt SEMICOLON {$$=setDeclaratorListSpecifier($2,$1);}
+      |                                                                           ^
+koo.y:90:52: warning: passing argument 1 of ‘makeSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   90 |  : type_specifier {$$=makeSpecifier($1,0);}
+      |                                                    ^  
+      |                                                    |
+      |                                                    YYSTYPE {aka long int}
+koo.y:25:15: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   25 |  A_SPECIFIER* makeSpecifier(A_TYPE *, S_KIND);
+      |               ^~~~~~~~~~~~~
+koo.y:90:32: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   90 |  : type_specifier {$$=makeSpecifier($1,0);}
+      |                                ^
+koo.y:91:41: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   91 |  | storage_class_specifier {$$=makeSpecifier(0,$1);}
+      |                                         ^
+koo.y:92:77: warning: passing argument 1 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |  | type_specifier declaration_specifiers {$$=updateSpecifier($2,$1,0);}
+      |                                                                             ^  
+      |                                                                             |
+      |                                                                             YYSTYPE {aka long int}
+koo.y:28:15: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 |  A_SPECIFIER* updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |               ^~~~~~~~~~~~~~~
+koo.y:92:86: warning: passing argument 2 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |  | type_specifier declaration_specifiers {$$=updateSpecifier($2,$1,0);}
+      |                                                                                      ^   
+      |                                                                                      |
+      |                                                                                      YYSTYPE {aka long int}
+koo.y:28:15: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 |  A_SPECIFIER* updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |               ^~~~~~~~~~~~~~~
+koo.y:92:55: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   92 |  | type_specifier declaration_specifiers {$$=updateSpecifier($2,$1,0);}
+      |                                                       ^
+koo.y:93:86: warning: passing argument 1 of ‘updateSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+   93 |  | storage_class_specifier declaration_specifiers {$$=updateSpecifier($2,0,$1);}
+      |                                                                                      ^  
+      |                                                                                      |
+      |                                                                                      YYSTYPE {aka long int}
+koo.y:28:15: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   28 |  A_SPECIFIER* updateSpecifier(A_SPECIFIER *, A_TYPE *, S_KIND);
+      |               ^~~~~~~~~~~~~~~
+koo.y:93:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} makes integer from pointer without a cast [-Wint-conversion]
+   93 |  | storage_class_specifier declaration_specifiers {$$=updateSpecifier($2,0,$1);}
+      |                                                                ^
+koo.y:101:17: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  101 |  : {$$=makeDummyIdentifier();}
+      |                 ^
+koo.y:106:85: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  106 |  | init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                                                     ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:106:95: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  106 |  | init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                                                               ^  
+      |                                                                                               |
+      |                                                                                               YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:106:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  106 |  | init_declarator_list COMMA init_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                            ^
+koo.y:110:71: warning: passing argument 1 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |  | declarator ASSIGN initializer {$$=setDeclaratorInit($1,$3);}
+      |                                                                       ^   
+      |                                                                       |
+      |                                                                       YYSTYPE {aka long int}
+koo.y:34:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   34 |  A_ID*  setDeclaratorInit(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~
+koo.y:110:81: warning: passing argument 2 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |  | declarator ASSIGN initializer {$$=setDeclaratorInit($1,$3);}
+      |                                                                                 ^  
+      |                                                                                 |
+      |                                                                                 YYSTYPE {aka long int}
+koo.y:34:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   34 |  A_ID*  setDeclaratorInit(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~
+koo.y:110:47: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  110 |  | declarator ASSIGN initializer {$$=setDeclaratorInit($1,$3);}
+      |                                               ^
+koo.y:113:74: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |  : assignment_expression {$$=makeNode(N_INIT_LIST_ONE,NIL,$1,NIL);}
+      |                                                                          ^  
+      |                                                                          |
+      |                                                                          YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:113:39: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  113 |  : assignment_expression {$$=makeNode(N_INIT_LIST_ONE,NIL,$1,NIL);}
+      |                                       ^
+koo.y:118:42: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  118 |  {$$=makeNode(N_INIT_LIST,$1,NIL,makeNode(N_INIT_LIST_NIL,NIL,NIL,NIL));}
+      |                                     ~~~~~^~~
+      |                                          |
+      |                                          YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:118:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  118 |  {$$=makeNode(N_INIT_LIST,$1,NIL,makeNode(N_INIT_LIST_NIL,NIL,NIL,NIL));}
+      |               ^
+koo.y:119:83: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  119 |  | initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST,$1,$3);}
+      |                                                                                   ^   
+      |                                                                                   |
+      |                                                                                   YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:119:93: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  119 |  | initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST,$1,$3);}
+      |                                                                                             ^  
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:119:52: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  119 |  | initializer_list COMMA initializer {$$=makeNodeList(N_INIT_LIST,$1,$3);}
+      |                                                    ^
+koo.y:128:61: warning: passing argument 2 of ‘setTypeStructOrEnumIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  128 |  {$$=setTypeStructOrEnumIdentifier($1,$2,ID_STRUCT);}
+      |                                                             ^  
+      |                                                             |
+      |                                                             YYSTYPE {aka long int}
+koo.y:49:11: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   49 |  A_TYPE*  setTypeStructOrEnumIdentifier(T_KIND, char *, ID_KIND);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:128:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  128 |  {$$=setTypeStructOrEnumIdentifier($1,$2,ID_STRUCT);}
+      |               ^
+koo.y:129:19: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  129 |  LR { $$=current_id;current_level++;} struct_declaration_list RR
+      |                   ^
+koo.y:130:58: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  130 |  {checkForwardReference();$$=setTypeField($3,$6);current_level--;
+      |                                                     ~~~~~^~~~
+      |                                                          |
+      |                                                          YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:130:68: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  130 |  {checkForwardReference();$$=setTypeField($3,$6);current_level--;
+      |                                                               ~~~  ^   
+      |                                                                    |
+      |                                                                    YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:130:39: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  130 |  {checkForwardReference();$$=setTypeField($3,$6);current_level--;
+      |                                       ^
+koo.y:131:12: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  131 |  current_id=$5;}
+      |            ^
+koo.y:132:33: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  132 |  | struct_or_union {$$=makeType($1);} LR {$$=current_id;current_level++;}
+      |                                 ^
+koo.y:132:55: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  132 |  | struct_or_union {$$=makeType($1);} LR {$$=current_id;current_level++;}
+      |                                                       ^
+koo.y:133:85: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  133 |  struct_declaration_list RR {checkForwardReference();$$=setTypeField($2,$5);
+      |                                                                                     ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:133:95: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  133 |  struct_declaration_list RR {checkForwardReference();$$=setTypeField($2,$5);
+      |                                                                                               ^   
+      |                                                                                               |
+      |                                                                                               YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:133:66: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  133 |  struct_declaration_list RR {checkForwardReference();$$=setTypeField($2,$5);
+      |                                                                  ^
+koo.y:134:28: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  134 |  current_level--;current_id=$4;}
+      |                            ^
+koo.y:136:66: warning: passing argument 2 of ‘getTypeOfStructOrEnumRefIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  136 |  {$$=getTypeOfStructOrEnumRefIdentifier($1,$2,ID_STRUCT);}
+      |                                                                  ^  
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:33:11: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 |  A_TYPE*  getTypeOfStructOrEnumRefIdentifier(T_KIND, char *, ID_KIND);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:136:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  136 |  {$$=getTypeOfStructOrEnumRefIdentifier($1,$2,ID_STRUCT);}
+      |               ^
+koo.y:144:85: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  144 |  | struct_declaration_list struct_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                                     ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:144:95: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  144 |  | struct_declaration_list struct_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                                                               ^  
+      |                                                                                               |
+      |                                                                                               YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:144:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  144 |  | struct_declaration_list struct_declaration {$$=linkDeclaratorList($1,$2);}
+      |                                                            ^
+koo.y:148:54: warning: passing argument 1 of ‘setStructDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  148 |  {$$=setStructDeclaratorListSpecifier($2,$1);}
+      |                                                      ^   
+      |                                                      |
+      |                                                      YYSTYPE {aka long int}
+koo.y:43:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   43 |  A_ID*  setStructDeclaratorListSpecifier(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:148:64: warning: passing argument 2 of ‘setStructDeclaratorListSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  148 |  {$$=setStructDeclaratorListSpecifier($2,$1);}
+      |                                                                ^   
+      |                                                                |
+      |                                                                YYSTYPE {aka long int}
+koo.y:43:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   43 |  A_ID*  setStructDeclaratorListSpecifier(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:148:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  148 |  {$$=setStructDeclaratorListSpecifier($2,$1);}
+      |               ^
+koo.y:152:89: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  152 |  | struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                                                         ^   
+      |                                                                                         |
+      |                                                                                         YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:152:99: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  152 |  | struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:152:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  152 |  | struct_declarator_list COMMA struct_declarator {$$=linkDeclaratorList($1,$3);}
+      |                                                                ^
+koo.y:159:58: warning: passing argument 2 of ‘setTypeStructOrEnumIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  159 |  {$$=setTypeStructOrEnumIdentifier(T_ENUM,$2,ID_ENUM);}
+      |                                                     ~~~  ^  
+      |                                                          |
+      |                                                          YYSTYPE {aka long int}
+koo.y:49:11: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   49 |  A_TYPE*  setTypeStructOrEnumIdentifier(T_KIND, char *, ID_KIND);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:159:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  159 |  {$$=setTypeStructOrEnumIdentifier(T_ENUM,$2,ID_ENUM);}
+      |               ^
+koo.y:160:56: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  160 |  LR enumerator_list RR {$$=setTypeField($3,$5);}
+      |                                                        ^   
+      |                                                        |
+      |                                                        YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:160:66: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  160 |  LR enumerator_list RR {$$=setTypeField($3,$5);}
+      |                                                                  ^   
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:160:37: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  160 |  LR enumerator_list RR {$$=setTypeField($3,$5);}
+      |                                     ^
+koo.y:161:26: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  161 |  | ENUM_SYM {$$=makeType(T_ENUM);}
+      |                          ^
+koo.y:162:56: warning: passing argument 1 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  162 |  LR enumerator_list RR {$$=setTypeField($2,$4);}
+      |                                                        ^   
+      |                                                        |
+      |                                                        YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:162:66: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  162 |  LR enumerator_list RR {$$=setTypeField($2,$4);}
+      |                                                                  ^   
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:162:37: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  162 |  LR enumerator_list RR {$$=setTypeField($2,$4);}
+      |                                     ^
+koo.y:164:63: warning: passing argument 2 of ‘getTypeOfStructOrEnumRefIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  164 |  {$$=getTypeOfStructOrEnumRefIdentifier(T_ENUM,$2,ID_ENUM);}
+      |                                                          ~~~  ^  
+      |                                                               |
+      |                                                               YYSTYPE {aka long int}
+koo.y:33:11: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   33 |  A_TYPE*  getTypeOfStructOrEnumRefIdentifier(T_KIND, char *, ID_KIND);
+      |           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:164:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  164 |  {$$=getTypeOfStructOrEnumRefIdentifier(T_ENUM,$2,ID_ENUM);}
+      |               ^
+koo.y:168:75: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  168 |  | enumerator_list COMMA enumerator {$$=linkDeclaratorList($1,$3);}
+      |                                                                           ^   
+      |                                                                           |
+      |                                                                           YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:168:85: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  168 |  | enumerator_list COMMA enumerator {$$=linkDeclaratorList($1,$3);}
+      |                                                                                     ^  
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:168:50: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  168 |  | enumerator_list COMMA enumerator {$$=linkDeclaratorList($1,$3);}
+      |                                                  ^
+koo.y:172:54: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  172 |  {$$=setDeclaratorKind(makeIdentifier($1),ID_ENUM_LITERAL);}
+      |                                                 ~~~~~^~~
+      |                                                      |
+      |                                                      YYSTYPE {aka long int}
+koo.y:22:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   22 |  A_ID*  makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+koo.y:172:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  172 |  {$$=setDeclaratorKind(makeIdentifier($1),ID_ENUM_LITERAL);}
+      |               ^
+koo.y:174:54: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  174 |  {$$=setDeclaratorKind(makeIdentifier($1),ID_ENUM_LITERAL);}
+      |                                                 ~~~~~^~~
+      |                                                      |
+      |                                                      YYSTYPE {aka long int}
+koo.y:22:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   22 |  A_ID*  makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+koo.y:174:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  174 |  {$$=setDeclaratorKind(makeIdentifier($1),ID_ENUM_LITERAL);}
+      |               ^
+koo.y:175:57: warning: passing argument 1 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  175 |  ASSIGN expression {$$=setDeclaratorInit($2,$4);}
+      |                                                         ^   
+      |                                                         |
+      |                                                         YYSTYPE {aka long int}
+koo.y:34:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   34 |  A_ID*  setDeclaratorInit(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~
+koo.y:175:67: warning: passing argument 2 of ‘setDeclaratorInit’ makes pointer from integer without a cast [-Wint-conversion]
+  175 |  ASSIGN expression {$$=setDeclaratorInit($2,$4);}
+      |                                                                   ^  
+      |                                                                   |
+      |                                                                   YYSTYPE {aka long int}
+koo.y:34:9: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   34 |  A_ID*  setDeclaratorInit(A_ID *, A_NODE *);
+      |         ^~~~~~~~~~~~~~~~~
+koo.y:175:33: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  175 |  ASSIGN expression {$$=setDeclaratorInit($2,$4);}
+      |                                 ^
+koo.y:178:74: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  178 |  : pointer direct_declarator {$$=setDeclaratorElementType($2,$1);}
+      |                                                                          ^  
+      |                                                                          |
+      |                                                                          YYSTYPE {aka long int}
+koo.y:37:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   37 |  A_ID*  setDeclaratorElementType(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:178:83: warning: passing argument 2 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  178 |  : pointer direct_declarator {$$=setDeclaratorElementType($2,$1);}
+      |                                                                                   ^   
+      |                                                                                   |
+      |                                                                                   YYSTYPE {aka long int}
+koo.y:37:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   37 |  A_ID*  setDeclaratorElementType(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:178:43: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  178 |  : pointer direct_declarator {$$=setDeclaratorElementType($2,$1);}
+      |                                           ^
+koo.y:182:22: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  182 |  : STAR {$$=makeType(T_POINTER);}
+      |                      ^
+koo.y:183:55: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  183 |  | STAR pointer {$$=setTypeElementType($2,makeType(T_POINTER));}
+      |                                                  ~~~~~^~~
+      |                                                       |
+      |                                                       YYSTYPE {aka long int}
+koo.y:45:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   45 |  A_TYPE*  setTypeElementType(A_TYPE *, A_TYPE *);
+      |           ^~~~~~~~~~~~~~~~~~
+koo.y:183:30: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  183 |  | STAR pointer {$$=setTypeElementType($2,makeType(T_POINTER));}
+      |                              ^
+koo.y:186:49: warning: passing argument 1 of ‘makeIdentifier’ makes pointer from integer without a cast [-Wint-conversion]
+  186 |  : IDENTIFIER {$$=makeIdentifier($1);}
+      |                                                 ^  
+      |                                                 |
+      |                                                 YYSTYPE {aka long int}
+koo.y:22:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   22 |  A_ID*  makeIdentifier(char *);
+      |         ^~~~~~~~~~~~~~
+koo.y:186:28: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  186 |  : IDENTIFIER {$$=makeIdentifier($1);}
+      |                            ^
+koo.y:189:86: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  189 |  {$$=setDeclaratorElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |                                                                                      ^   
+      |                                                                                      |
+      |                                                                                      YYSTYPE {aka long int}
+koo.y:47:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   47 |  A_TYPE*  setTypeExpr(A_TYPE *, A_NODE *);
+      |           ^~~~~~~~~~~
+koo.y:189:46: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  189 |  {$$=setDeclaratorElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |                                         ~~~~~^~~~
+      |                                              |
+      |                                              YYSTYPE {aka long int}
+koo.y:37:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   37 |  A_ID*  setDeclaratorElementType(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:189:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  189 |  {$$=setDeclaratorElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |               ^
+koo.y:190:38: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  190 |  | direct_declarator LP {$$=current_id;current_level++;}
+      |                                      ^
+koo.y:192:44: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  192 |  {checkForwardReference();current_id=$3;current_level--;
+      |                                            ^
+koo.y:193:78: warning: passing argument 2 of ‘setTypeField’ makes pointer from integer without a cast [-Wint-conversion]
+  193 |  $$=setDeclaratorElementType($1,setTypeField(makeType(T_FUNC),$4));}
+      |                                                                              ^   
+      |                                                                              |
+      |                                                                              YYSTYPE {aka long int}
+koo.y:46:11: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   46 |  A_TYPE*  setTypeField(A_TYPE *, A_ID *);
+      |           ^~~~~~~~~~~~
+koo.y:193:38: warning: passing argument 1 of ‘setDeclaratorElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  193 |  $$=setDeclaratorElementType($1,setTypeField(makeType(T_FUNC),$4));}
+      |                                 ~~~~~^~~~
+      |                                      |
+      |                                      YYSTYPE {aka long int}
+koo.y:37:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   37 |  A_ID*  setDeclaratorElementType(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:193:7: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  193 |  $$=setDeclaratorElementType($1,setTypeField(makeType(T_FUNC),$4));}
+      |       ^
+koo.y:201:73: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  201 |  | parameter_list COMMA DOTDOTDOT {$$=linkDeclaratorList($1,setDeclaratorKind(makeDummyIdentifier(),ID_PARM));}
+      |                                                                    ~~~~~^~~~
+      |                                                                         |
+      |                                                                         YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:201:48: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  201 |  | parameter_list COMMA DOTDOTDOT {$$=linkDeclaratorList($1,setDeclaratorKind(makeDummyIdentifier(),ID_PARM));}
+      |                                                ^
+koo.y:205:85: warning: passing argument 1 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  205 |  | parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1,$3);}
+      |                                                                                     ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:205:95: warning: passing argument 2 of ‘linkDeclaratorList’ makes pointer from integer without a cast [-Wint-conversion]
+  205 |  | parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1,$3);}
+      |                                                                                               ^  
+      |                                                                                               |
+      |                                                                                               YYSTYPE {aka long int}
+koo.y:31:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   31 |  A_ID*  linkDeclaratorList(A_ID *, A_ID *);
+      |         ^~~~~~~~~~~~~~~~~~
+koo.y:205:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  205 |  | parameter_list COMMA parameter_declaration {$$=linkDeclaratorList($1,$3);}
+      |                                                            ^
+koo.y:209:53: warning: passing argument 1 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  209 |  {$$=setParameterDeclaratorSpecifier($2,$1);}
+      |                                                     ^  
+      |                                                     |
+      |                                                     YYSTYPE {aka long int}
+koo.y:42:9: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   42 |  A_ID*  setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:209:62: warning: passing argument 2 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  209 |  {$$=setParameterDeclaratorSpecifier($2,$1);}
+      |                                                              ^   
+      |                                                              |
+      |                                                              YYSTYPE {aka long int}
+koo.y:42:9: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   42 |  A_ID*  setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:209:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  209 |  {$$=setParameterDeclaratorSpecifier($2,$1);}
+      |               ^
+koo.y:212:29: warning: passing argument 2 of ‘setDeclaratorType’ makes pointer from integer without a cast [-Wint-conversion]
+  212 |  makeDummyIdentifier(),$2),$1);}
+      |                        ~~~~~^~~
+      |                             |
+      |                             YYSTYPE {aka long int}
+koo.y:36:9: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   36 |  A_ID*  setDeclaratorType(A_ID *, A_TYPE *);
+      |         ^~~~~~~~~~~~~~~~~
+koo.y:212:39: warning: passing argument 2 of ‘setParameterDeclaratorSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  212 |  makeDummyIdentifier(),$2),$1);}
+      |                                       ^   
+      |                                       |
+      |                                       YYSTYPE {aka long int}
+koo.y:42:9: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   42 |  A_ID*  setParameterDeclaratorSpecifier(A_ID *, A_SPECIFIER *);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+koo.y:211:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  211 |  {$$=setParameterDeclaratorSpecifier(setDeclaratorType(
+      |               ^
+koo.y:220:25: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  220 |  | pointer {$$=makeType(T_POINTER);}
+      |                         ^
+koo.y:222:40: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  222 |  {$$=setTypeElementType($2,makeType(T_POINTER));}
+      |                                   ~~~~~^~~
+      |                                        |
+      |                                        YYSTYPE {aka long int}
+koo.y:45:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   45 |  A_TYPE*  setTypeElementType(A_TYPE *, A_TYPE *);
+      |           ^~~~~~~~~~~~~~~~~~
+koo.y:222:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  222 |  {$$=setTypeElementType($2,makeType(T_POINTER));}
+      |               ^
+koo.y:227:51: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  227 |  {$$=setTypeExpr(makeType(T_ARRAY),$2);}
+      |                                                   ^   
+      |                                                   |
+      |                                                   YYSTYPE {aka long int}
+koo.y:47:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   47 |  A_TYPE*  setTypeExpr(A_TYPE *, A_NODE *);
+      |           ^~~~~~~~~~~
+koo.y:227:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  227 |  {$$=setTypeExpr(makeType(T_ARRAY),$2);}
+      |               ^
+koo.y:229:80: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  229 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |                                                                                ^   
+      |                                                                                |
+      |                                                                                YYSTYPE {aka long int}
+koo.y:47:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   47 |  A_TYPE*  setTypeExpr(A_TYPE *, A_NODE *);
+      |           ^~~~~~~~~~~
+koo.y:229:40: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  229 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |                                   ~~~~~^~~~
+      |                                        |
+      |                                        YYSTYPE {aka long int}
+koo.y:45:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   45 |  A_TYPE*  setTypeElementType(A_TYPE *, A_TYPE *);
+      |           ^~~~~~~~~~~~~~~~~~
+koo.y:229:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  229 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_ARRAY),$3));}
+      |               ^
+koo.y:231:50: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  231 |  {$$=setTypeExpr(makeType(T_FUNC),$2);}
+      |                                                  ^   
+      |                                                  |
+      |                                                  YYSTYPE {aka long int}
+koo.y:47:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   47 |  A_TYPE*  setTypeExpr(A_TYPE *, A_NODE *);
+      |           ^~~~~~~~~~~
+koo.y:231:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  231 |  {$$=setTypeExpr(makeType(T_FUNC),$2);}
+      |               ^
+koo.y:233:79: warning: passing argument 2 of ‘setTypeExpr’ makes pointer from integer without a cast [-Wint-conversion]
+  233 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_FUNC),$3));}
+      |                                                                               ^   
+      |                                                                               |
+      |                                                                               YYSTYPE {aka long int}
+koo.y:47:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   47 |  A_TYPE*  setTypeExpr(A_TYPE *, A_NODE *);
+      |           ^~~~~~~~~~~
+koo.y:233:40: warning: passing argument 1 of ‘setTypeElementType’ makes pointer from integer without a cast [-Wint-conversion]
+  233 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_FUNC),$3));}
+      |                                   ~~~~~^~~~
+      |                                        |
+      |                                        YYSTYPE {aka long int}
+koo.y:45:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   45 |  A_TYPE*  setTypeElementType(A_TYPE *, A_TYPE *);
+      |           ^~~~~~~~~~~~~~~~~~
+koo.y:233:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  233 |  {$$=setTypeElementType($1,setTypeExpr(makeType(T_FUNC),$3));}
+      |               ^
+koo.y:236:17: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  236 |  : {$$=makeNode(N_STMT_LIST_NIL,NIL,NIL,NIL);}
+      |                 ^
+koo.y:240:54: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  240 |  : statement {$$=makeNode(N_STMT_LIST,$1,NIL,
+      |                                                      ^  
+      |                                                      |
+      |                                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:240:27: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  240 |  : statement {$$=makeNode(N_STMT_LIST,$1,NIL,
+      |                           ^
+koo.y:242:73: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  242 |  | statement_list statement {$$=makeNodeList(N_STMT_LIST,$1,$2);}
+      |                                                                         ^   
+      |                                                                         |
+      |                                                                         YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:242:83: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  242 |  | statement_list statement {$$=makeNodeList(N_STMT_LIST,$1,$2);}
+      |                                                                                   ^  
+      |                                                                                   |
+      |                                                                                   YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:242:42: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  242 |  | statement_list statement {$$=makeNodeList(N_STMT_LIST,$1,$2);}
+      |                                          ^
+koo.y:254:49: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  254 |  {$$=makeNode(N_STMT_LABEL_CASE, $2,NIL,$4);}
+      |                                            ~~   ^   
+      |                                                 |
+      |                                                 YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:254:63: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  254 |  {$$=makeNode(N_STMT_LABEL_CASE, $2,NIL,$4);}
+      |                                                               ^  
+      |                                                               |
+      |                                                               YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:254:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  254 |  {$$=makeNode(N_STMT_LABEL_CASE, $2,NIL,$4);}
+      |               ^
+koo.y:256:55: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  256 |  {$$=makeNode(N_STMT_LABEL_DEFAULT,NIL,$3,NIL);}
+      |                                                       ^  
+      |                                                       |
+      |                                                       YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:256:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  256 |  {$$=makeNode(N_STMT_LABEL_DEFAULT,NIL,$3,NIL);}
+      |               ^
+koo.y:259:20: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_ID *’ {aka ‘struct s_id *’} makes integer from pointer without a cast [-Wint-conversion]
+  259 |  : LR {$$=current_id;current_level++;} declaration_list_opt
+      |                    ^
+koo.y:261:38: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  261 |  $$=makeNode(N_STMT_COMPOUND,$3,NIL,$4); current_id=$2;
+      |                                 ~~~~~^~~~
+      |                                      |
+      |                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:261:52: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  261 |  $$=makeNode(N_STMT_COMPOUND,$3,NIL,$4); current_id=$2;
+      |                                               ~~~~~^~~~
+      |                                                    |
+      |                                                    YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:261:7: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  261 |  $$=makeNode(N_STMT_COMPOUND,$3,NIL,$4); current_id=$2;
+      |       ^
+koo.y:261:69: warning: assignment to ‘A_ID *’ {aka ‘struct s_id *’} from ‘YYSTYPE’ {aka ‘long int’} makes pointer from integer without a cast [-Wint-conversion]
+  261 |  $$=makeNode(N_STMT_COMPOUND,$3,NIL,$4); current_id=$2;
+      |                                                                     ^
+koo.y:265:27: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  265 |  : SEMICOLON {$$=makeNode(N_STMT_EMPTY,NIL,NIL,NIL);}
+      |                           ^
+koo.y:266:75: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  266 |  | expression SEMICOLON {$$=makeNode(N_STMT_EXPRESSION,NIL,$1,NIL);}
+      |                                                                           ^   
+      |                                                                           |
+      |                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:266:38: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  266 |  | expression SEMICOLON {$$=makeNode(N_STMT_EXPRESSION,NIL,$1,NIL);}
+      |                                      ^
+koo.y:269:76: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  269 |  : IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF,$3,NIL,$5);}
+      |                                                                       ~~   ^   
+      |                                                                            |
+      |                                                                            YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:269:90: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  269 |  : IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF,$3,NIL,$5);}
+      |                                                                                          ^  
+      |                                                                                          |
+      |                                                                                          YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:269:51: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  269 |  : IF_SYM LP expression RP statement {$$=makeNode(N_STMT_IF,$3,NIL,$5);}
+      |                                                   ^
+koo.y:270:100: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  270 |  | IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE,$3,$5,$7);}
+      |                                                                                               ~    ^   
+      |                                                                                                    |
+      |                                                                                                    YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:270:110: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  270 |  | IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE,$3,$5,$7);}
+      |                                                                                                              ^   
+      |                                                                                                              |
+      |                                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:270:120: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  270 |  | IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE,$3,$5,$7);}
+      |                                                                                                                        ^  
+      |                                                                                                                        |
+      |                                                                                                                        YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:270:70: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  270 |  | IF_SYM LP expression RP statement ELSE_SYM statement {$$=makeNode(N_STMT_IF_ELSE,$3,$5,$7);}
+      |                                                                      ^
+koo.y:271:84: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  271 |  | SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH,$3,NIL,$5);}
+      |                                                                               ~~   ^   
+      |                                                                                    |
+      |                                                                                    YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:271:98: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  271 |  | SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH,$3,NIL,$5);}
+      |                                                                                                  ^  
+      |                                                                                                  |
+      |                                                                                                  YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:271:55: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  271 |  | SWITCH_SYM LP expression RP statement {$$=makeNode(N_STMT_SWITCH,$3,NIL,$5);}
+      |                                                       ^
+koo.y:274:82: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  274 |  : WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE,$3,NIL,$5);}
+      |                                                                             ~~   ^   
+      |                                                                                  |
+      |                                                                                  YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:274:96: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  274 |  : WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE,$3,NIL,$5);}
+      |                                                                                                ^  
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:274:54: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  274 |  : WHILE_SYM LP expression RP statement {$$=makeNode(N_STMT_WHILE,$3,NIL,$5);}
+      |                                                      ^
+koo.y:275:96: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  275 |  | DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO,$2,NIL,$5);}
+      |                                                                                           ~~   ^   
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:275:110: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  275 |  | DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO,$2,NIL,$5);}
+      |                                                                                                              ^   
+      |                                                                                                              |
+      |                                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:275:71: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  275 |  | DO_SYM statement WHILE_SYM LP expression RP SEMICOLON {$$=makeNode(N_STMT_DO,$2,NIL,$5);}
+      |                                                                       ^
+koo.y:276:82: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  276 |  | FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR,$3,NIL,$5);}
+      |                                                                             ~~   ^   
+      |                                                                                  |
+      |                                                                                  YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:276:96: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  276 |  | FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR,$3,NIL,$5);}
+      |                                                                                                ^  
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:276:56: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  276 |  | FOR_SYM LP for_expression RP statement {$$=makeNode(N_STMT_FOR,$3,NIL,$5);}
+      |                                                        ^
+koo.y:279:107: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  279 |  : expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP,$1,$3,$5);}
+      |                                                                                                      ~    ^   
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:279:117: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  279 |  : expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP,$1,$3,$5);}
+      |                                                                                                                     ^   
+      |                                                                                                                     |
+      |                                                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:279:127: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  279 |  : expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP,$1,$3,$5);}
+      |                                                                                                                               ^  
+      |                                                                                                                               |
+      |                                                                                                                               YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:279:82: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  279 |  : expression_opt SEMICOLON expression_opt SEMICOLON expression_opt {$$=makeNode(N_FOR_EXP,$1,$3,$5);}
+      |                                                                                  ^
+koo.y:286:86: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  286 |  : RETURN_SYM expression_opt SEMICOLON {$$=makeNode(N_STMT_RETURN,NIL,$2,NIL);}
+      |                                                                                      ^   
+      |                                                                                      |
+      |                                                                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:286:53: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  286 |  : RETURN_SYM expression_opt SEMICOLON {$$=makeNode(N_STMT_RETURN,NIL,$2,NIL);}
+      |                                                     ^
+koo.y:287:40: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  287 |  | CONTINUE_SYM SEMICOLON {$$=makeNode(N_STMT_CONTINUE,NIL,NIL,NIL);}
+      |                                        ^
+koo.y:288:37: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  288 |  | BREAK_SYM SEMICOLON {$$=makeNode(N_STMT_BREAK,NIL,NIL,NIL);}
+      |                                     ^
+koo.y:291:17: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  291 |  : {$$=makeNode(N_ARG_LIST_NIL,NIL,NIL,NIL);}
+      |                 ^
+koo.y:296:41: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  296 |  {$$=makeNode(N_ARG_LIST,$1,NIL,makeNode(N_ARG_LIST_NIL,NIL,NIL,NIL));}
+      |                                    ~~~~~^~~
+      |                                         |
+      |                                         YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:296:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  296 |  {$$=makeNode(N_ARG_LIST,$1,NIL,makeNode(N_ARG_LIST_NIL,NIL,NIL,NIL));}
+      |               ^
+koo.y:298:45: warning: passing argument 2 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  298 |  {$$=makeNodeList(N_ARG_LIST,$1,$3);}
+      |                                             ^   
+      |                                             |
+      |                                             YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:298:55: warning: passing argument 3 of ‘makeNodeList’ makes pointer from integer without a cast [-Wint-conversion]
+  298 |  {$$=makeNodeList(N_ARG_LIST,$1,$3);}
+      |                                                       ^  
+      |                                                       |
+      |                                                       YYSTYPE {aka long int}
+koo.y:21:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   21 |  A_NODE*  makeNodeList (NODE_NAME, A_NODE *, A_NODE *);
+      |           ^~~~~~~~~~~~
+koo.y:298:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  298 |  {$$=makeNodeList(N_ARG_LIST,$1,$3);}
+      |               ^
+koo.y:315:91: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  315 |  | unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN,$1,NIL,$3);}
+      |                                                                                      ~~   ^   
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:315:105: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  315 |  | unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN,$1,NIL,$3);}
+      |                                                                                                         ^  
+      |                                                                                                         |
+      |                                                                                                         YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:315:63: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  315 |  | unary_expression ASSIGN assignment_expression {$$=makeNode(N_EXP_ASSIGN,$1,NIL,$3);}
+      |                                                               ^
+koo.y:322:93: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  322 |  | logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR,$1,NIL,$3);}
+      |                                                                                        ~~   ^   
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:322:107: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  322 |  | logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR,$1,NIL,$3);}
+      |                                                                                                           ^  
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:322:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  322 |  | logical_or_expression BARBAR logical_and_expression {$$=makeNode(N_EXP_OR,$1,NIL,$3);}
+      |                                                                     ^
+koo.y:326:94: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  326 |  | logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND,$1,NIL,$3);}
+      |                                                                                         ~~   ^   
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:326:108: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  326 |  | logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND,$1,NIL,$3);}
+      |                                                                                                            ^  
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:326:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  326 |  | logical_and_expression AMPAMP bitwise_or_expression {$$=makeNode(N_EXP_AND,$1,NIL,$3);}
+      |                                                                     ^
+koo.y:339:88: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  339 |  | equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL,$1,NIL,$3);}
+      |                                                                                   ~~   ^   
+      |                                                                                        |
+      |                                                                                        YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:339:102: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  339 |  | equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL,$1,NIL,$3);}
+      |                                                                                                      ^  
+      |                                                                                                      |
+      |                                                                                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:339:63: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  339 |  | equality_expression EQL relational_expression {$$=makeNode(N_EXP_EQL,$1,NIL,$3);}
+      |                                                               ^
+koo.y:340:88: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  340 |  | equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ,$1,NIL,$3);}
+      |                                                                                   ~~   ^   
+      |                                                                                        |
+      |                                                                                        YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:340:102: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  340 |  | equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ,$1,NIL,$3);}
+      |                                                                                                      ^  
+      |                                                                                                      |
+      |                                                                                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:340:63: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  340 |  | equality_expression NEQ relational_expression {$$=makeNode(N_EXP_NEQ,$1,NIL,$3);}
+      |                                                               ^
+koo.y:344:85: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  344 |  | relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS,$1,NIL,$3);}
+      |                                                                                ~~   ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:344:99: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  344 |  | relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS,$1,NIL,$3);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:344:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  344 |  | relational_expression LSS shift_expression {$$=makeNode(N_EXP_LSS,$1,NIL,$3);}
+      |                                                            ^
+koo.y:345:85: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  345 |  | relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR,$1,NIL,$3);}
+      |                                                                                ~~   ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:345:99: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  345 |  | relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR,$1,NIL,$3);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:345:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  345 |  | relational_expression GTR shift_expression {$$=makeNode(N_EXP_GTR,$1,NIL,$3);}
+      |                                                            ^
+koo.y:346:85: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  346 |  | relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ,$1,NIL,$3);}
+      |                                                                                ~~   ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:346:99: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  346 |  | relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ,$1,NIL,$3);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:346:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  346 |  | relational_expression LEQ shift_expression {$$=makeNode(N_EXP_LEQ,$1,NIL,$3);}
+      |                                                            ^
+koo.y:347:85: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  347 |  | relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ,$1,NIL,$3);}
+      |                                                                                ~~   ^   
+      |                                                                                     |
+      |                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:347:99: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  347 |  | relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ,$1,NIL,$3);}
+      |                                                                                                   ^  
+      |                                                                                                   |
+      |                                                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:347:60: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  347 |  | relational_expression GEQ shift_expression {$$=makeNode(N_EXP_GEQ,$1,NIL,$3);}
+      |                                                            ^
+koo.y:354:93: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  354 |  | additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD,$1,NIL,$3);}
+      |                                                                                        ~~   ^   
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:354:107: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  354 |  | additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD,$1,NIL,$3);}
+      |                                                                                                           ^  
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:354:68: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  354 |  | additive_expression PLUS multiplicative_expression {$$=makeNode(N_EXP_ADD,$1,NIL,$3);}
+      |                                                                    ^
+koo.y:355:94: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  355 |  | additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB,$1,NIL,$3);}
+      |                                                                                         ~~   ^   
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:355:108: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  355 |  | additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB,$1,NIL,$3);}
+      |                                                                                                            ^  
+      |                                                                                                            |
+      |                                                                                                            YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:355:69: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  355 |  | additive_expression MINUS multiplicative_expression {$$=makeNode(N_EXP_SUB,$1,NIL,$3);}
+      |                                                                     ^
+koo.y:359:89: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  359 |  | multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL,$1,NIL,$3);}
+      |                                                                                    ~~   ^   
+      |                                                                                         |
+      |                                                                                         YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:359:103: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  359 |  | multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL,$1,NIL,$3);}
+      |                                                                                                       ^  
+      |                                                                                                       |
+      |                                                                                                       YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:359:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  359 |  | multiplicative_expression STAR cast_expression {$$=makeNode(N_EXP_MUL,$1,NIL,$3);}
+      |                                                                ^
+koo.y:360:91: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  360 |  | multiplicative_expression SLASH cast_expression {$$= makeNode(N_EXP_DIV,$1,NIL,$3);}
+      |                                                                                      ~~   ^   
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:360:105: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  360 |  | multiplicative_expression SLASH cast_expression {$$= makeNode(N_EXP_DIV,$1,NIL,$3);}
+      |                                                                                                         ^  
+      |                                                                                                         |
+      |                                                                                                         YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:360:65: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  360 |  | multiplicative_expression SLASH cast_expression {$$= makeNode(N_EXP_DIV,$1,NIL,$3);}
+      |                                                                 ^
+koo.y:361:93: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  361 |  | multiplicative_expression PERCENT cast_expression {$$= makeNode(N_EXP_MOD,$1,NIL,$3);}
+      |                                                                                        ~~   ^   
+      |                                                                                             |
+      |                                                                                             YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:361:107: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  361 |  | multiplicative_expression PERCENT cast_expression {$$= makeNode(N_EXP_MOD,$1,NIL,$3);}
+      |                                                                                                           ^  
+      |                                                                                                           |
+      |                                                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:361:67: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  361 |  | multiplicative_expression PERCENT cast_expression {$$= makeNode(N_EXP_MOD,$1,NIL,$3);}
+      |                                                                   ^
+koo.y:365:75: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  365 |  | LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST,$2,NIL,$4);}
+      |                                                                      ~~   ^   
+      |                                                                           |
+      |                                                                           YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:365:89: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  365 |  | LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST,$2,NIL,$4);}
+      |                                                                                         ^  
+      |                                                                                         |
+      |                                                                                         YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:365:49: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  365 |  | LP type_name RP cast_expression {$$=makeNode(N_EXP_CAST,$2,NIL,$4);}
+      |                                                 ^
+koo.y:369:76: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  369 |  | PLUSPLUS unary_expression {$$=makeNode(N_EXP_PRE_INC,NIL,$2,NIL);}
+      |                                                                            ^  
+      |                                                                            |
+      |                                                                            YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:369:43: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  369 |  | PLUSPLUS unary_expression {$$=makeNode(N_EXP_PRE_INC,NIL,$2,NIL);}
+      |                                           ^
+koo.y:370:78: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  370 |  | MINUSMINUS unary_expression {$$=makeNode(N_EXP_PRE_DEC,NIL,$2,NIL);}
+      |                                                                              ^  
+      |                                                                              |
+      |                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:370:45: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  370 |  | MINUSMINUS unary_expression {$$=makeNode(N_EXP_PRE_DEC,NIL,$2,NIL);}
+      |                                             ^
+koo.y:371:66: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  371 |  | AMP cast_expression {$$=makeNode(N_EXP_AMP,NIL,$2,NIL);}
+      |                                                                  ^  
+      |                                                                  |
+      |                                                                  YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:371:37: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  371 |  | AMP cast_expression {$$=makeNode(N_EXP_AMP,NIL,$2,NIL);}
+      |                                     ^
+koo.y:372:68: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  372 |  | STAR cast_expression {$$=makeNode(N_EXP_STAR,NIL,$2,NIL);}
+      |                                                                    ^  
+      |                                                                    |
+      |                                                                    YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:372:38: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  372 |  | STAR cast_expression {$$=makeNode(N_EXP_STAR,NIL,$2,NIL);}
+      |                                      ^
+koo.y:373:67: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  373 |  | EXCL cast_expression {$$=makeNode(N_EXP_NOT,NIL,$2,NIL);}
+      |                                                                   ^  
+      |                                                                   |
+      |                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:373:38: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  373 |  | EXCL cast_expression {$$=makeNode(N_EXP_NOT,NIL,$2,NIL);}
+      |                                      ^
+koo.y:374:70: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  374 |  | MINUS cast_expression {$$=makeNode(N_EXP_MINUS,NIL,$2,NIL);}
+      |                                                                      ^  
+      |                                                                      |
+      |                                                                      YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:374:39: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  374 |  | MINUS cast_expression {$$=makeNode(N_EXP_MINUS,NIL,$2,NIL);}
+      |                                       ^
+koo.y:375:68: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  375 |  | PLUS cast_expression {$$=makeNode(N_EXP_PLUS,NIL,$2,NIL);}
+      |                                                                    ^  
+      |                                                                    |
+      |                                                                    YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:375:38: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  375 |  | PLUS cast_expression {$$=makeNode(N_EXP_PLUS,NIL,$2,NIL);}
+      |                                      ^
+koo.y:376:79: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  376 |  | SIZEOF_SYM unary_expression {$$=makeNode(N_EXP_SIZE_EXP,NIL,$2,NIL);}
+      |                                                                               ^  
+      |                                                                               |
+      |                                                                               YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:376:45: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  376 |  | SIZEOF_SYM unary_expression {$$=makeNode(N_EXP_SIZE_EXP,NIL,$2,NIL);}
+      |                                             ^
+koo.y:377:79: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  377 |  | SIZEOF_SYM LP type_name RP {$$=makeNode(N_EXP_SIZE_TYPE,NIL,$3,NIL);}
+      |                                                                               ^   
+      |                                                                               |
+      |                                                                               YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:377:44: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  377 |  | SIZEOF_SYM LP type_name RP {$$=makeNode(N_EXP_SIZE_TYPE,NIL,$3,NIL);}
+      |                                            ^
+koo.y:381:80: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  381 |  | postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY,$1,NIL,$3);}
+      |                                                                           ~~   ^   
+      |                                                                                |
+      |                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:381:94: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  381 |  | postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY,$1,NIL,$3);}
+      |                                                                                              ^   
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:381:53: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  381 |  | postfix_expression LB expression RB {$$=makeNode(N_EXP_ARRAY,$1,NIL,$3);}
+      |                                                     ^
+koo.y:382:101: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  382 |  | postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL,$1,NIL,$3);}
+      |                                                                                                ~~   ^   
+      |                                                                                                     |
+      |                                                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:382:115: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  382 |  | postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL,$1,NIL,$3);}
+      |                                                                                                                   ^   
+      |                                                                                                                   |
+      |                                                                                                                   YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:382:66: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  382 |  | postfix_expression LP arg_expression_list_opt RP {$$=makeNode(N_EXP_FUNCTION_CALL,$1,NIL,$3);}
+      |                                                                  ^
+koo.y:383:82: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  383 |  | postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT,$1,NIL,$3);}
+      |                                                                             ~~   ^   
+      |                                                                                  |
+      |                                                                                  YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:383:96: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  383 |  | postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT,$1,NIL,$3);}
+      |                                                                                                ^  
+      |                                                                                                |
+      |                                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:383:54: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  383 |  | postfix_expression PERIOD IDENTIFIER {$$=makeNode(N_EXP_STRUCT,$1,NIL,$3);}
+      |                                                      ^
+koo.y:384:80: warning: passing argument 2 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  384 |  | postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW,$1,NIL,$3);}
+      |                                                                           ~~   ^   
+      |                                                                                |
+      |                                                                                YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:384:94: warning: passing argument 4 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  384 |  | postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW,$1,NIL,$3);}
+      |                                                                                              ^  
+      |                                                                                              |
+      |                                                                                              YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:384:53: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  384 |  | postfix_expression ARROW IDENTIFIER {$$=makeNode(N_EXP_ARROW,$1,NIL,$3);}
+      |                                                     ^
+koo.y:385:79: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  385 |  | postfix_expression PLUSPLUS {$$=makeNode(N_EXP_POST_INC,NIL,$1,NIL);}
+      |                                                                               ^   
+      |                                                                               |
+      |                                                                               YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:385:45: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  385 |  | postfix_expression PLUSPLUS {$$=makeNode(N_EXP_POST_INC,NIL,$1,NIL);}
+      |                                             ^
+koo.y:386:81: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  386 |  | postfix_expression MINUSMINUS {$$=makeNode(N_EXP_POST_DEC,NIL,$1,NIL);}
+      |                                                                                 ^   
+      |                                                                                 |
+      |                                                                                 YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:386:47: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  386 |  | postfix_expression MINUSMINUS {$$=makeNode(N_EXP_POST_DEC,NIL,$1,NIL);}
+      |                                               ^
+koo.y:390:68: warning: passing argument 1 of ‘getIdentifierDeclared’ makes pointer from integer without a cast [-Wint-conversion]
+  390 |  {$$=makeNode(N_EXP_IDENT,NIL,getIdentifierDeclared($1),NIL);}
+      |                                                                    ^  
+      |                                                                    |
+      |                                                                    YYSTYPE {aka long int}
+koo.y:32:9: note: expected ‘char *’ but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   32 |  A_ID*  getIdentifierDeclared(char *);
+      |         ^~~~~~~~~~~~~~~~~~~~~
+koo.y:390:41: warning: passing argument 3 of ‘makeNode’ from incompatible pointer type [-Wincompatible-pointer-types]
+  390 |  {$$=makeNode(N_EXP_IDENT,NIL,getIdentifierDeclared($1),NIL);}
+      |                                         ^~~~~~~~~~~~~~~~~~~~~~         
+      |                                         |
+      |                                         A_ID * {aka struct s_id *}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘A_ID *’ {aka ‘struct s_id *’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:390:15: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  390 |  {$$=makeNode(N_EXP_IDENT,NIL,getIdentifierDeclared($1),NIL);}
+      |               ^
+koo.y:391:69: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  391 |  | INTEGER_CONSTANT {$$=makeNode(N_EXP_INT_CONST,NIL,$1,NIL);}
+      |                                                                     ^  
+      |                                                                     |
+      |                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:391:34: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  391 |  | INTEGER_CONSTANT {$$=makeNode(N_EXP_INT_CONST,NIL,$1,NIL);}
+      |                                  ^
+koo.y:392:69: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  392 |  | FLOAT_CONSTANT {$$=makeNode(N_EXP_FLOAT_CONST,NIL,$1,NIL);}
+      |                                                                     ^  
+      |                                                                     |
+      |                                                                     YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:392:32: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  392 |  | FLOAT_CONSTANT {$$=makeNode(N_EXP_FLOAT_CONST,NIL,$1,NIL);}
+      |                                ^
+koo.y:393:71: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  393 |  | CHARACTER_CONSTANT{$$=makeNode(N_EXP_CHAR_CONST,NIL,$1,NIL);}
+      |                                                                       ^  
+      |                                                                       |
+      |                                                                       YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:393:35: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  393 |  | CHARACTER_CONSTANT{$$=makeNode(N_EXP_CHAR_CONST,NIL,$1,NIL);}
+      |                                   ^
+koo.y:394:72: warning: passing argument 3 of ‘makeNode’ makes pointer from integer without a cast [-Wint-conversion]
+  394 |  | STRING_LITERAL {$$=makeNode(N_EXP_STRING_LITERAL,NIL,$1,NIL);}
+      |                                                                        ^  
+      |                                                                        |
+      |                                                                        YYSTYPE {aka long int}
+koo.y:20:11: note: expected ‘A_NODE *’ {aka ‘struct s_node *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   20 |  A_NODE*  makeNode (NODE_NAME, A_NODE *, A_NODE *, A_NODE *);
+      |           ^~~~~~~~
+koo.y:394:32: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_NODE *’ {aka ‘struct s_node *’} makes integer from pointer without a cast [-Wint-conversion]
+  394 |  | STRING_LITERAL {$$=makeNode(N_EXP_STRING_LITERAL,NIL,$1,NIL);}
+      |                                ^
+koo.y:398:91: warning: passing argument 1 of ‘setTypeNameSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  398 |  : declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2,$1);}
+      |                                                                                           ^  
+      |                                                                                           |
+      |                                                                                           YYSTYPE {aka long int}
+koo.y:44:11: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   44 |  A_TYPE*  setTypeNameSpecifier(A_TYPE *, A_SPECIFIER *);
+      |           ^~~~~~~~~~~~~~~~~~~~
+koo.y:398:100: warning: passing argument 2 of ‘setTypeNameSpecifier’ makes pointer from integer without a cast [-Wint-conversion]
+  398 |  : declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2,$1);}
+      |                                                                                                    ^   
+      |                                                                                                    |
+      |                                                                                                    YYSTYPE {aka long int}
+koo.y:44:11: note: expected ‘A_SPECIFIER *’ {aka ‘struct <anonymous> *’} but argument is of type ‘YYSTYPE’ {aka ‘long int’}
+   44 |  A_TYPE*  setTypeNameSpecifier(A_TYPE *, A_SPECIFIER *);
+      |           ^~~~~~~~~~~~~~~~~~~~
+koo.y:398:64: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  398 |  : declaration_specifiers abstract_declarator_opt {$$=setTypeNameSpecifier($2,$1);}
+      |                                                                ^
+koo.y: In function ‘main’:
+koo.y:417:5: warning: implicit declaration of function ‘print_ast’ [-Wimplicit-function-declaration]
+  417 |     print_ast(root);
+      |     ^~~~~~~~~
+koo.y:418:2: warning: implicit declaration of function ‘semantic_analysis’ [-Wimplicit-function-declaration]
+  418 |  semantic_analysis(root);
+      |  ^~~~~~~~~~~~~~~~~
+koo.y:420:5: warning: implicit declaration of function ‘print_sem_ast’ [-Wimplicit-function-declaration]
+  420 |     print_sem_ast(root);
+      |     ^~~~~~~~~~~~~
+koo.l: In function ‘yylex’:
+koo.l:73:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   73 | {digit}+\.{digit}+ { yylval = makeString(yytext); return(FLOAT_CONSTANT);}
+      |          ^
+koo.l:75:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   75 | \"([^"\n]|\\["\n])*\" { yylval = makeString(yytext); return(STRING_LITERAL);}
+      |          ^
+koo.l: In function ‘checkIdentifier’:
+koo.l:97:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   97 |   yylval = makeString(s);
+      |          ^
+koo.l:101:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘A_TYPE *’ {aka ‘struct s_type *’} makes integer from pointer without a cast [-Wint-conversion]
+  101 |   yylval = id -> type;
+      |          ^
+koo.l:105:10: warning: assignment to ‘YYSTYPE’ {aka ‘long int’} from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+  105 |   yylval = id -> name;
+      |          ^
+print.c: In function ‘print_node’:
+print.c:93:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   93 |  printf("%s\n", node_name[node->name]);
+      |  ^~~~~~
+print.c:93:2: warning: incompatible implicit declaration of built-in function ‘printf’
+print.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "type.h"
+  +++ |+#include <stdio.h>
+    2 | 
+print.c: In function ‘print_space’:
+print.c:99:22: warning: incompatible implicit declaration of built-in function ‘printf’
+   99 |  for(i=1; i<=s; i++) printf("|  ");
+      |                      ^~~~~~
+print.c:99:22: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘print_ast’:
+print.c:104:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  104 |  printf("=======  syntax tree  ==========\n");
+      |  ^~~~~~
+print.c:104:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_program’:
+print.c:115:21: warning: passing argument 1 of ‘prt_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |   prt_A_ID_LIST(node->clink, s+1);
+      |                 ~~~~^~~~~~~
+      |                     |
+      |                     struct s_node *
+print.c:79:20: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   79 | void prt_A_ID_LIST(A_ID *, int);
+      |                    ^~~~~~
+print.c:118:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  118 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:118:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_initializer’:
+print.c:138:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  138 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:138:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_expression’:
+print.c:149:21: warning: passing argument 1 of ‘prt_A_ID_NAME’ from incompatible pointer type [-Wincompatible-pointer-types]
+  149 |   prt_A_ID_NAME(node->clink, s+1);
+      |                 ~~~~^~~~~~~
+      |                     |
+      |                     struct s_node *
+print.c:81:20: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   81 | void prt_A_ID_NAME(A_ID *, int);
+      |                    ^~~~~~
+print.c:152:19: warning: passing argument 1 of ‘prt_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  152 |   prt_integer(node->clink, s+1);
+      |               ~~~~^~~~~~~
+      |                   |
+      |                   struct s_node *
+print.c:83:18: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   83 | void prt_integer(int, int);
+      |                  ^~~
+print.c:155:19: warning: passing argument 1 of ‘prt_STRING’ from incompatible pointer type [-Wincompatible-pointer-types]
+  155 |    prt_STRING(node->clink, s+1);
+      |               ~~~~^~~~~~~
+      |                   |
+      |                   struct s_node *
+print.c:82:17: note: expected ‘char *’ but argument is of type ‘struct s_node *’
+   82 | void prt_STRING(char *, int);
+      |                 ^~~~~~
+print.c:158:20: warning: passing argument 1 of ‘prt_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  158 |    prt_integer(node->clink, s+1);
+      |                ~~~~^~~~~~~
+      |                    |
+      |                    struct s_node *
+print.c:83:18: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   83 | void prt_integer(int, int);
+      |                  ^~~
+print.c:161:18: warning: passing argument 1 of ‘prt_STRING’ from incompatible pointer type [-Wincompatible-pointer-types]
+  161 |   prt_STRING(node->clink, s+1);
+      |              ~~~~^~~~~~~
+      |                  |
+      |                  struct s_node *
+print.c:82:17: note: expected ‘char *’ but argument is of type ‘struct s_node *’
+   82 | void prt_STRING(char *, int);
+      |                 ^~~~~~
+print.c:174:18: warning: passing argument 1 of ‘prt_STRING’ from incompatible pointer type [-Wincompatible-pointer-types]
+  174 |   prt_STRING(node->rlink, s+1);
+      |              ~~~~^~~~~~~
+      |                  |
+      |                  struct s_node *
+print.c:82:17: note: expected ‘char *’ but argument is of type ‘struct s_node *’
+   82 | void prt_STRING(char *, int);
+      |                 ^~~~~~
+print.c:189:18: warning: passing argument 1 of ‘prt_A_TYPE’ from incompatible pointer type [-Wincompatible-pointer-types]
+  189 |   prt_A_TYPE(node->clink, s+1);
+      |              ~~~~^~~~~~~
+      |                  |
+      |                  struct s_node *
+print.c:78:17: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘struct s_node *’
+   78 | void prt_A_TYPE(A_TYPE *, int);
+      |                 ^~~~~~~~
+print.c:192:18: warning: passing argument 1 of ‘prt_A_TYPE’ from incompatible pointer type [-Wincompatible-pointer-types]
+  192 |   prt_A_TYPE(node->llink, s+1);
+      |              ~~~~^~~~~~~
+      |                  |
+      |                  struct s_node *
+print.c:78:17: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘struct s_node *’
+   78 | void prt_A_TYPE(A_TYPE *, int);
+      |                 ^~~~~~~~
+print.c:213:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  213 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:213:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_arg_expr_list’:
+print.c:230:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  230 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:230:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_statement’:
+print.c:248:22: warning: passing argument 1 of ‘prt_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+  248 |    prt_A_ID_LIST(node->llink, s+1);
+      |                  ~~~~^~~~~~~
+      |                      |
+      |                      struct s_node *
+print.c:79:20: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   79 | void prt_A_ID_LIST(A_ID *, int);
+      |                    ^~~~~~
+print.c:287:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  287 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:287:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_statement_list’:
+print.c:304:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  304 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:304:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_for_expression’:
+print.c:323:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  323 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print.c:323:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_integer’:
+print.c:330:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  330 |  printf("%d\n", a);
+      |  ^~~~~~
+print.c:330:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_STRING’:
+print.c:335:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  335 |  printf("%s\n", str);
+      |  ^~~~~~
+print.c:335:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_A_TYPE’:
+print.c:344:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  344 |   printf("(int)\n");
+      |   ^~~~~~
+print.c:344:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:346:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  346 |   printf("(float)\n");
+      |   ^~~~~~
+print.c:346:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:348:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  348 |   printf("(char %d)\n",t->size);
+      |   ^~~~~~
+print.c:348:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:350:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  350 |   printf("(void)");
+      |   ^~~~~~
+print.c:350:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:352:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  352 |   printf("(null)");
+      |   ^~~~~~
+print.c:352:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:354:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  354 |   printf("(DONE:%x)\n",t);
+      |   ^~~~~~
+print.c:354:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:354:18: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  354 |   printf("(DONE:%x)\n",t);
+      |                 ~^     ~
+      |                  |     |
+      |                  |     A_TYPE * {aka struct s_type *}
+      |                  unsigned int
+print.c:359:4: warning: incompatible implicit declaration of built-in function ‘printf’
+  359 |    printf("ENUM\n");
+      |    ^~~~~~
+print.c:359:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c: In function ‘prt_A_ID_NAME’:
+print.c:419:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  419 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d \n", id->name, id->type,
+      |  ^~~~~~
+print.c:419:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:419:28: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  419 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d \n", id->name, id->type,
+      |                           ~^                                       ~~~~~~~~
+      |                            |                                         |
+      |                            unsigned int                              A_TYPE * {aka struct s_type *}
+print.c: In function ‘prt_A_ID’:
+print.c:426:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  426 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d\n", id->name, id->type,
+      |  ^~~~~~
+print.c:426:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print.c:426:28: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  426 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d\n", id->name, id->type,
+      |                           ~^                                      ~~~~~~~~
+      |                            |                                        |
+      |                            unsigned int                             A_TYPE * {aka struct s_type *}
+supFunc.c: In function ‘searchIdentifier’:
+supFunc.c:144:7: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+  144 |   if (strcmp(id->name, s) == 0)
+      |       ^~~~~~
+supFunc.c: In function ‘setFunctionDeclaratorSpecifier’:
+supFunc.c:304:7: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+  304 |   if (strlen(a -> name))
+      |       ^~~~~~
+supFunc.c:304:7: warning: incompatible implicit declaration of built-in function ‘strlen’
+supFunc.c:4:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    3 | #include "type.h"
+  +++ |+#include <string.h>
+    4 | 
+supFunc.c: In function ‘setDeclaratorListSpecifier’:
+supFunc.c:323:7: warning: incompatible implicit declaration of built-in function ‘strlen’
+  323 |   if (strlen(a->name) && searchIdentifierAtCurrentLevel(a -> name, a -> prev))
+      |       ^~~~~~
+supFunc.c:323:7: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+supFunc.c: In function ‘syntax_error’:
+supFunc.c:546:6: warning: incompatible implicit declaration of built-in function ‘strlen’
+  546 |  if (strlen(yytext)==0)
+      |      ^~~~~~
+supFunc.c:546:6: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+semantic.c:53:12: warning: ‘semantic_err’ initialized and declared ‘extern’
+   53 | extern int semantic_err = 0;
+      |            ^~~~~~~~~~~~
+semantic.c: In function ‘put_literal’:
+semantic.c:100:25: warning: implicit declaration of function ‘strlen’ [-Wimplicit-function-declaration]
+  100 |         literal_size += strlen(lit.value.s) + 1;
+      |                         ^~~~~~
+semantic.c:100:25: warning: incompatible implicit declaration of built-in function ‘strlen’
+semantic.c:2:1: note: include ‘<string.h>’ or provide a declaration of ‘strlen’
+    1 | #include "type.h"
+  +++ |+#include <string.h>
+    2 | float atof();
+semantic.c: In function ‘sem_expression’:
+semantic.c:142:21: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  142 |         node->clink = put_literal(lit, node->line); // index of literal table
+      |                     ^
+semantic.c:150:21: warning: assignment to ‘char *’ from incompatible pointer type ‘struct s_node *’ [-Wincompatible-pointer-types]
+  150 |         lit.value.s = node->clink;
+      |                     ^
+semantic.c:151:21: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  151 |         node->clink = put_literal(lit, node->line);
+      |                     ^
+semantic.c:161:13: warning: implicit declaration of function ‘isPointerOrArrayType’; did you mean ‘isPointerOrArrayType_sem’? [-Wimplicit-function-declaration]
+  161 |         if (isPointerOrArrayType(t1))
+      |             ^~~~~~~~~~~~~~~~~~~~
+      |             isPointerOrArrayType_sem
+semantic.c:180:21: warning: assignment to ‘struct s_node *’ from incompatible pointer type ‘A_ID *’ {aka ‘struct s_id *’} [-Wincompatible-pointer-types]
+  180 |         node->rlink = id;
+      |                     ^
+semantic.c:196:21: warning: assignment to ‘struct s_node *’ from incompatible pointer type ‘A_ID *’ {aka ‘struct s_id *’} [-Wincompatible-pointer-types]
+  196 |         node->rlink = id;
+      |                     ^
+semantic.c:237:25: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  237 |             node->clink = i;
+      |                         ^
+semantic.c:248:25: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  248 |             node->clink = t->size;
+      |                         ^
+semantic.c: In function ‘sem_statement’:
+semantic.c:473:25: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  473 |             node->llink = lit.value.i;
+      |                         ^
+semantic.c: In function ‘sem_A_TYPE’:
+semantic.c:643:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  643 |             id->init = (A_NODE *)i++;
+      |                        ^
+semantic.c:658:25: warning: assignment to ‘struct s_node *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  658 |                 t->expr = lit.value.i;
+      |                         ^
+semantic.c:660:43: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  660 |         i = sem_A_TYPE(t->element_type) * (int)t->expr;
+      |                                           ^
+semantic.c: In function ‘getStructFieldIdentifier’:
+semantic.c:830:17: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]
+  830 |             if (strcmp(id->name, s) == 0)
+      |                 ^~~~~~
+semantic.c: In function ‘getTypeAndValueOfExpression’:
+semantic.c:1173:30: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1173 |             result.value.i = (int)id->init;
+      |                              ^
+semantic.c:1178:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1178 |         result.value.i = (int)node->clink;
+      |                          ^
+semantic.c:1182:26: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1182 |         result.value.c = (char)node->clink;
+      |                          ^
+semantic.c: In function ‘semantic_error’:
+semantic.c:1362:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+ 1362 |     printf("*** semantic error at line %d: ", ll);
+      |     ^~~~~~
+semantic.c:1362:5: warning: incompatible implicit declaration of built-in function ‘printf’
+semantic.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "type.h"
+  +++ |+#include <stdio.h>
+    2 | float atof();
+semantic.c:1406:45: warning: format ‘%s’ expects a matching ‘char *’ argument [-Wformat=]
+ 1406 |         printf("illegal kind of identifier %s in expression\n");
+      |                                            ~^
+      |                                             |
+      |                                             char *
+semantic.c: In function ‘semantic_warning’:
+semantic.c:1492:5: warning: incompatible implicit declaration of built-in function ‘printf’
+ 1492 |     printf("--- warning at line %d:", ll);
+      |     ^~~~~~
+semantic.c:1492:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:28:1: warning: data definition has no type or storage class
+   28 | print_space(int);
+      | ^~~~~~~~~~~
+print_sem.c:28:1: warning: type defaults to ‘int’ in declaration of ‘print_space’ [-Wimplicit-int]
+print_sem.c:29:1: warning: data definition has no type or storage class
+   29 | print_node(A_NODE *,int);
+      | ^~~~~~~~~~
+print_sem.c:29:1: warning: type defaults to ‘int’ in declaration of ‘print_node’ [-Wimplicit-int]
+print_sem.c: In function ‘print_sem_ast’:
+print_sem.c:33:2: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   33 |  printf("=======  semantic tree  ==========\n");
+      |  ^~~~~~
+print_sem.c:33:2: warning: incompatible implicit declaration of built-in function ‘printf’
+print_sem.c:2:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+    1 | #include "type.h"
+  +++ |+#include <stdio.h>
+    2 | 
+print_sem.c: In function ‘prt_sem_program’:
+print_sem.c:44:25: warning: passing argument 1 of ‘prt_sem_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+   44 |   prt_sem_A_ID_LIST(node->clink, s+1);
+      |                     ~~~~^~~~~~~
+      |                         |
+      |                         struct s_node *
+print_sem.c:19:24: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   19 | void prt_sem_A_ID_LIST(A_ID *, int);
+      |                        ^~~~~~
+print_sem.c:47:3: warning: incompatible implicit declaration of built-in function ‘printf’
+   47 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:47:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_initializer’:
+print_sem.c:67:3: warning: incompatible implicit declaration of built-in function ‘printf’
+   67 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:67:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_expression’:
+print_sem.c:78:25: warning: passing argument 1 of ‘prt_sem_A_ID_NAME’ from incompatible pointer type [-Wincompatible-pointer-types]
+   78 |   prt_sem_A_ID_NAME(node->clink, s+1);
+      |                     ~~~~^~~~~~~
+      |                         |
+      |                         struct s_node *
+print_sem.c:21:24: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   21 | void prt_sem_A_ID_NAME(A_ID *, int);
+      |                        ^~~~~~
+print_sem.c:81:23: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+   81 |   prt_sem_integer(node->clink, s+1);
+      |                   ~~~~^~~~~~~
+      |                       |
+      |                       struct s_node *
+print_sem.c:23:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   23 | void prt_sem_integer(int, int);
+      |                      ^~~
+print_sem.c:84:24: warning: passing argument 1 of ‘prt_sem_LITERAL’ makes integer from pointer without a cast [-Wint-conversion]
+   84 |    prt_sem_LITERAL(node->clink, s+1);
+      |                    ~~~~^~~~~~~
+      |                        |
+      |                        struct s_node *
+print_sem.c:22:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   22 | void prt_sem_LITERAL(int, int);
+      |                      ^~~
+print_sem.c:87:24: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+   87 |    prt_sem_integer(node->clink, s+1);
+      |                    ~~~~^~~~~~~
+      |                        |
+      |                        struct s_node *
+print_sem.c:23:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   23 | void prt_sem_integer(int, int);
+      |                      ^~~
+print_sem.c:90:23: warning: passing argument 1 of ‘prt_sem_LITERAL’ makes integer from pointer without a cast [-Wint-conversion]
+   90 |   prt_sem_LITERAL(node->clink, s+1);
+      |                   ~~~~^~~~~~~
+      |                       |
+      |                       struct s_node *
+print_sem.c:22:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   22 | void prt_sem_LITERAL(int, int);
+      |                      ^~~
+print_sem.c:102:25: warning: passing argument 1 of ‘prt_sem_A_ID_NAME’ from incompatible pointer type [-Wincompatible-pointer-types]
+  102 |   prt_sem_A_ID_NAME(node->rlink, s+1);
+      |                     ~~~~^~~~~~~
+      |                         |
+      |                         struct s_node *
+print_sem.c:21:24: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   21 | void prt_sem_A_ID_NAME(A_ID *, int);
+      |                        ^~~~~~
+print_sem.c:106:25: warning: passing argument 1 of ‘prt_sem_A_ID_NAME’ from incompatible pointer type [-Wincompatible-pointer-types]
+  106 |   prt_sem_A_ID_NAME(node->rlink, s+1);
+      |                     ~~~~^~~~~~~
+      |                         |
+      |                         struct s_node *
+print_sem.c:21:24: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   21 | void prt_sem_A_ID_NAME(A_ID *, int);
+      |                        ^~~~~~
+print_sem.c:121:23: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  121 |   prt_sem_integer(node->clink, s+1);
+      |                   ~~~~^~~~~~~
+      |                       |
+      |                       struct s_node *
+print_sem.c:23:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   23 | void prt_sem_integer(int, int);
+      |                      ^~~
+print_sem.c:124:22: warning: passing argument 1 of ‘prt_sem_A_TYPE’ from incompatible pointer type [-Wincompatible-pointer-types]
+  124 |   prt_sem_A_TYPE(node->llink, s+1);
+      |                  ~~~~^~~~~~~
+      |                      |
+      |                      struct s_node *
+print_sem.c:18:21: note: expected ‘A_TYPE *’ {aka ‘struct s_type *’} but argument is of type ‘struct s_node *’
+   18 | void prt_sem_A_TYPE(A_TYPE *, int);
+      |                     ^~~~~~~~
+print_sem.c:145:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  145 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:145:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_arg_expr_list’:
+print_sem.c:162:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  162 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:162:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_statement’:
+print_sem.c:172:23: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  172 |   prt_sem_integer(node->llink, s+1);
+      |                   ~~~~^~~~~~~
+      |                       |
+      |                       struct s_node *
+print_sem.c:23:22: note: expected ‘int’ but argument is of type ‘struct s_node *’
+   23 | void prt_sem_integer(int, int);
+      |                      ^~~
+print_sem.c:179:41: warning: passing argument 1 of ‘prt_sem_A_ID_LIST’ from incompatible pointer type [-Wincompatible-pointer-types]
+  179 |   if(node->llink) prt_sem_A_ID_LIST(node->llink, s+1);
+      |                                     ~~~~^~~~~~~
+      |                                         |
+      |                                         struct s_node *
+print_sem.c:19:24: note: expected ‘A_ID *’ {aka ‘struct s_id *’} but argument is of type ‘struct s_node *’
+   19 | void prt_sem_A_ID_LIST(A_ID *, int);
+      |                        ^~~~~~
+print_sem.c:220:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  220 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:220:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_statement_list’:
+print_sem.c:238:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  238 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:238:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_for_expression’:
+print_sem.c:255:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  255 |   printf("****syntax tree error******");
+      |   ^~~~~~
+print_sem.c:255:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_integer’:
+print_sem.c:262:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  262 |  printf("INT=%d\n", a);
+      |  ^~~~~~
+print_sem.c:262:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_LITERAL’:
+print_sem.c:268:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  268 |  printf("LITERAL: ");
+      |  ^~~~~~
+print_sem.c:268:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c: In function ‘prt_sem_A_TYPE’:
+print_sem.c:281:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  281 |   printf("(int)\n");
+      |   ^~~~~~
+print_sem.c:281:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:283:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  283 |   printf("(float)\n");
+      |   ^~~~~~
+print_sem.c:283:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:285:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  285 |   printf("(char %d)\n",t->size);
+      |   ^~~~~~
+print_sem.c:285:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:287:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  287 |   printf("(void)\n");
+      |   ^~~~~~
+print_sem.c:287:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:289:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  289 |   printf("(null)\n");
+      |   ^~~~~~
+print_sem.c:289:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:291:3: warning: incompatible implicit declaration of built-in function ‘printf’
+  291 |   printf("(DONE:%x)\n",t);
+      |   ^~~~~~
+print_sem.c:291:3: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:291:18: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 2 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  291 |   printf("(DONE:%x)\n",t);
+      |                 ~^     ~
+      |                  |     |
+      |                  |     A_TYPE * {aka struct s_type *}
+      |                  unsigned int
+print_sem.c:296:4: warning: incompatible implicit declaration of built-in function ‘printf’
+  296 |    printf("ENUM\n");
+      |    ^~~~~~
+print_sem.c:296:4: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:310:21: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  310 |    prt_sem_integer(t->expr,s+2);
+      |                    ~^~~~~~
+      |                     |
+      |                     struct s_node *
+print_sem.c:259:26: note: expected ‘int’ but argument is of type ‘struct s_node *’
+  259 | void prt_sem_integer(int a, int s)
+      |                      ~~~~^
+print_sem.c: In function ‘prt_sem_A_ID_NAME’:
+print_sem.c:350:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  350 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d VAL=%d ADDR=%d \n", id->name, id->type,
+      |  ^~~~~~
+print_sem.c:350:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:350:28: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  350 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d VAL=%d ADDR=%d \n", id->name, id->type,
+      |                           ~^                                                      ~~~~~~~~
+      |                            |                                                        |
+      |                            unsigned int                                             A_TYPE * {aka struct s_type *}
+print_sem.c: In function ‘prt_sem_A_ID’:
+print_sem.c:357:2: warning: incompatible implicit declaration of built-in function ‘printf’
+  357 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d VAL=%d ADDR=%d \n", id->name, id->type,
+      |  ^~~~~~
+print_sem.c:357:2: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+print_sem.c:357:28: warning: format ‘%x’ expects argument of type ‘unsigned int’, but argument 3 has type ‘A_TYPE *’ {aka ‘struct s_type *’} [-Wformat=]
+  357 |  printf("(ID=\"%s\") TYPE:%x KIND:%s SPEC=%s LEV=%d VAL=%d ADDR=%d \n", id->name, id->type,
+      |                           ~^                                                      ~~~~~~~~
+      |                            |                                                        |
+      |                            unsigned int                                             A_TYPE * {aka struct s_type *}
+print_sem.c:368:23: warning: passing argument 1 of ‘prt_sem_integer’ makes integer from pointer without a cast [-Wint-conversion]
+  368 |     prt_sem_integer(id->init,s+2);
+      |                     ~~^~~~~~
+      |                       |
+      |                       A_NODE * {aka struct s_node *}
+print_sem.c:259:26: note: expected ‘int’ but argument is of type ‘A_NODE *’ {aka ‘struct s_node *’}
+  259 | void prt_sem_integer(int a, int s)
+      |                      ~~~~^
